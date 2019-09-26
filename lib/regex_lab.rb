@@ -21,12 +21,13 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   fwc =  text.scan(/^[A-Z]/)
-  ewp = text.scan(/[.]/)
-   if fwc[0] == text[0] && ewp == text[-1]
-     true  
-   else
-     false    
-   end 
+  #ewp = text.scan(/[.]/)
+   #if fwc[0] == text[0] && ewp == text[-1]
+    # true  
+   #else
+     #false    
+   #end 
+   fwc 
 end
 
 def valid_phone_number?(phone)
