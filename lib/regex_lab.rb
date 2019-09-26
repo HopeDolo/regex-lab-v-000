@@ -20,15 +20,13 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  #fwc =  text.scan(/^[A-Z]/)
+  fwc = text.scan(/^[A-Z]/)
   ewp = text.scan(/[.]/)
-   #if fwc[0] == text[0] && ewp == text[-1]
-    # true  
-   #else
-     #false    
-   #end 
-   #fwc
-   ewp 
+  if fwc[0] == text[0] && ewp[0] == text[-1]
+    true  
+  else
+    false
+  end
 end
 
 def valid_phone_number?(phone)
