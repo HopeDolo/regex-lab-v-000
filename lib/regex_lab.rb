@@ -22,10 +22,10 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   fwc =  text.scan(/^[A-Z]/)
   ewp = text.scan(/[.]/)
-   if fwc == text[0] && ewp == text[-1]
-     false  
+   if fwc[0] == text[0] && ewp == text[-1]
+     true  
    else
-     true   
+     false    
    end 
 end
 
